@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알림페이지</title>
+
+    <style>
+        .notification-container {
+            background-color: #f3f5f7;
+            display: flex;
+            max-width: 410px;
+            width: 100%;
+            padding-bottom: 377px;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .content-wrapper {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-image {
+            aspect-ratio: 8.55;
+            object-fit: contain;
+            object-position: center;
+            width: 100%;
+        }
+
+        .logo-section {
+            display: flex;
+            margin-top: 20px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .logo-wrapper {
+            background-color: #f3f5f7;
+            display: flex;
+            width: 100%;
+            align-items: start;
+            justify-content: left;
+            padding: 7px 13px;
+        }
+
+        .logo {
+            aspect-ratio: 3.73;
+            object-fit: contain;
+            object-position: center;
+            width: 112px;
+            max-width: 100%;
+        }
+
+        .notification-header {
+            display: flex;
+            margin-top: 20px;
+            width: 100%;
+            flex-direction: column;
+            color: #000;
+            white-space: nowrap;
+            font: 700 20px/1.4 Noto Sans KR, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+
+        .header-content {
+            background-color: #f3f5f7;
+            display: flex;
+            gap: 7px;
+            padding: 8px 75px 8px 20px;
+        }
+
+        .header-icon {
+            aspect-ratio: 1;
+            object-fit: contain;
+            object-position: center;
+            width: 24px;
+            align-self: start;
+            margin-top: 4px;
+        }
+
+        .notification-list {
+            display: flex;
+            margin-top: 20px;
+            width: 380px;
+            max-width: 100%;
+            flex-direction: column;
+            font-family: Noto Sans KR, sans-serif;
+            color: #000;
+            font-weight: 400;
+        }
+
+        .notification-item {
+            border-radius: 15px;
+            background-color: #fff;
+            display: flex;
+            width: 360px;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 4px 12px;
+            margin-bottom: 10px;
+        }
+
+        .notification-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .notification-category {
+            font-size: 8px;
+            line-height: 24px;
+            align-self: start;
+        }
+
+        .notification-message {
+            font-size: 12px;
+            line-height: 1;
+            margin: 5px;
+        }
+
+        .notification-time {
+            font-size: 8px;
+            line-height: 24px;
+            align-self: start;
+        }
+
+        .notification-footer {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            color: #727680;
+            font: 400 8px/24px Noto Sans KR, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+
+        .footer-message {
+            background-color: #f3f5f7;
+            width: 410px;
+            text-align: center;
+            /* padding: 10px 70px; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="notification-container">
+        <div class="content-wrapper">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/775f7ca198ff02c085bf641675a34871592a98b7e40151f3c51cbd3e53a1889a?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58"
+                alt="" class="header-image" />
+            <div class="logo-section">
+                <div class="logo-wrapper">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/62a98fd06abc44f41935105a69a8d9298b6e23fa14cac995769daac47d1f5bbf?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58"
+                        alt="Company Logo" class="logo" />
+                </div>
+            </div>
+            <header class="notification-header">
+                <div class="header-content">
+                    <div>알림</div>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/493b514a4b3f72e2d831ed799262b69842e0a4ca6ddedd83fd8a30b3858873c3?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58"
+                        alt="" class="header-icon" />
+                </div>
+            </header>
+            <div class="notification-list">
+                <article class="notification-item">
+                    <div class="notification-content">
+                        <span class="notification-category">📱 요금제</span>
+                        <p class="notification-message">더 저렴한 요금제가 나왔어요 !</p>
+                    </div>
+                    <time class="notification-time">22시간 전</time>
+                </article>
+                <article class="notification-item">
+                    <div class="notification-content">
+                        <span class="notification-category">📱 요금제</span>
+                        <p class="notification-message">요금제 변경이 완료되었어요, 이메일을 확인해보세요.</p>
+                    </div>
+                    <time class="notification-time">1일</time>
+                </article>
+                <article class="notification-item">
+                    <div class="notification-content">
+                        <span class="notification-category">✍️ 가입</span>
+                        <p class="notification-message">회원이 되신걸 축하드려요.</p>
+                    </div>
+                    <time class="notification-time">3일</time>
+                </article>
+            </div>
+            <footer class="notification-footer">
+                <p class="footer-message">최대 1달 전까지의 알림을 확인할 수 있어요</p>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+
+    <style>
+        .user-dashboard {
+          background-color: #24945e;
+          display: flex;
+          max-width: 420px;
+          width: 100%;
+          padding: 0 0 13px;
+          flex-direction: column;
+          overflow: hidden;
+          margin: 0 auto;
+          border: 1px solid #24945e;
+        }
+        
+        .dashboard-content {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .status-bar {
+          width: 95%;
+          display: flex;
+          /* width: 420px;  */
+          justify-content: space-between;
+          padding: 12px 0px;
+        }
+        
+        .status-icon {
+          aspect-ratio: 2.57;
+          object-fit: contain;
+          width: 54px;
+          border-radius: 32px;
+        }
+        
+        .status-text {
+          aspect-ratio: 5.49;
+          object-fit: contain;
+          width: 66px;
+          margin: auto 0;
+        }
+        
+        .header {
+          padding: 0px 12px;
+          display: flex;
+          width: 88%;
+          margin-top: 20px;
+          justify-content: space-between;
+        }
+        
+        .logo {
+          aspect-ratio: 4.17;
+          object-fit: contain;
+          width: 125px;
+          max-width: 100%;
+        }
+        
+        .menu-icon {
+          aspect-ratio: 1.04;
+          object-fit: contain;
+          width: 30px;
+          margin: auto 0;
+        }
+        
+        .spacer {
+          background-color: #24945e;
+          align-self: stretch;
+          min-height: 40px;
+          margin-top: 18px;
+          width: 100%;
+        }
+        
+        .profile-image {
+          aspect-ratio: 1.02;
+          object-fit: contain;
+          width: 160px;
+          margin-top: 18px;
+          max-width: 100%;
+        }
+        
+        .usage-section {
+          border-radius: 15px;
+          display: flex;
+          margin-top: 18px;
+          /* width: 345px;
+          max-width: 100%; */
+          width: 88%;
+          flex-direction: column;
+          font-family: Noto Sans KR, sans-serif;
+          color: #24945e;
+        }
+        
+        .usage-content {
+          border-radius: 15px;
+          background-color: #fff;
+          display: flex;
+          justify-content: space-between;
+          padding: 14px 24px;
+        }
+        
+        .usage-text {
+          display: flex;
+          flex-direction: column;
+          padding: 0px;
+        }
+        
+        .usage-title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.4;
+          margin: 0px;
+        }
+
+        #myinfo {
+            margin: 0px;
+            padding-top: 7px;
+            text-align: left;
+            font-size: small;
+        }
+        
+        .usage-link {
+          font-size: 12px;
+          font-weight: 300;
+          text-decoration-line: underline;
+          align-self: start;
+          margin-top: 7px;
+        }
+        
+        .usage-icon {
+          aspect-ratio: 1.08;
+          object-fit: contain;
+          width: 28px;
+          border-radius: 15px;
+          margin: auto 0;
+        }
+        
+        .service-guide {
+          border-radius: 15px;
+          display: flex;
+          margin-top: 18px;
+          /* width: 345px;
+          max-width: 100%; */
+          width: 88%;
+          /* flex-direction: column; */
+          color: #fff;
+          font: 500 20px Noto Sans KR, sans-serif;
+        }
+        
+        .guide-content {
+          border-radius: 15px;
+          background-color: #fff;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          padding: 11px 18px 18px;
+        }
+        
+        .guide-title {
+          color: #24945e;
+          font-size: 24px;
+          font-weight: 700;
+          align-self: start;
+          margin-bottom: 0px;
+        }
+        
+        .guide-item {
+          border-radius: 15px;
+          background-color: #24945e;
+          display: flex;
+          margin-top: 19px;
+          justify-content: space-between;
+          padding: 15px 19px;
+        }
+        
+        .guide-icon {
+          aspect-ratio: 1.05;
+          object-fit: contain;
+          width: 21px;
+          border-radius: 15px;
+          margin: auto 0;
+        }
+        
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+        </style>
+</head>
+<body>
+    <section class="user-dashboard">
+        <div class="dashboard-content">
+          <header class="status-bar">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/14f30582092cb8ead8855df4e1e72f89936c0603e9dae4df40c28c3ff7eacc9d?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="" class="status-icon" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/06aad27f5dddac66af2e9d8d187212bad014b73ff2f7e00c7a3c959b4ebf8ddc?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="Status information" class="status-text" />
+          </header>
+          
+          <div class="header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/62118f2b0a305e108c4daced110dd856692a88b0a1abe0cfa54ae6cce80ead74?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="Company logo" class="logo" />
+            <div class="menu-icon">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e207334c033be87ca08cf5ce003c7c98face36df20d4082066c49f59b45afe39?apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="Menu" />
+            </div>
+          </div>
+          
+          <div class="spacer"></div>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/da750ce78dee54742e0d65441c68c77223f14c0c5848d8f2db69058dda81af47?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="User profile" class="profile-image" />
+          <div class="spacer"></div>
+          
+          <article class="usage-section">
+            <div class="usage-content">
+              <div class="usage-text">
+                <h2 class="usage-title">사용해봤어요</h2>
+                <p id="myinfo"><ins>내 정보 보러가기</ins></p>
+              </div>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f28051e0ad0bdeb29497a8ccf2295f339f78d866deca4de3dd34ad1daad218f?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="" class="usage-icon" />
+            </div>
+          </article>
+          
+          <nav class="service-guide">
+            <div class="guide-content">
+              <h2 class="guide-title">서비스 사용법</h2>
+              <div class="guide-item">
+                <span>사용중인 요금제 확인</span>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/88bd0a04ed8a89e68099f6bbc5408104ff9e15c38bbd7d46edd60d7721d1d103?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="" class="guide-icon" />
+              </div>
+              <div class="guide-item">
+                <span>데이터 사용량 확인</span>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c171b1701b18db5bc8d4c4b873bf2126f4e02a446d51f1f92f03f40876b464a0?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="" class="guide-icon" />
+              </div>
+              <div class="guide-item">
+                <span>eSIM 정보 확인</span>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c171b1701b18db5bc8d4c4b873bf2126f4e02a446d51f1f92f03f40876b464a0?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" alt="" class="guide-icon" />
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+</body>
+</html>

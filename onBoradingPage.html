@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온보딩페이지2</title>
+
+    <style>
+        .onboarding-data-usage {
+          border-radius: 15px;
+          background-color: #24945e;
+          display: flex;
+          max-width: 420px;
+          width: 100%;
+          flex-direction: column;
+          overflow: hidden;
+          margin: 0 auto;
+        }
+        
+        .background {
+          background-color: #24945e;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          border: 1px solid #24945e;
+        }
+        
+        .content-wrapper {
+          display: flex;
+          min-height: 812px;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        .header {
+          align-self: stretch;
+          display: flex;
+          width: 420px;
+          gap: 20px;
+          overflow: hidden;
+          justify-content: space-between;
+          padding: 12px 0px;
+        }
+        
+        .profile-image {
+          aspect-ratio: 2.57;
+          object-fit: contain;
+          object-position: center;
+          width: 54px;
+          border-radius: 32px;
+        }
+        
+        .header-icon {
+          aspect-ratio: 5.49;
+          object-fit: contain;
+          object-position: center;
+          width: 66px;
+          margin: auto 0;
+        }
+        
+        .end-text {
+          color: #fff;
+          margin-left: 330px;
+          margin-top: 23px;
+          font: 500 16px/1.4 Noto Sans KR, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        
+        .main-image {
+          aspect-ratio: 1.11;
+          object-fit: contain;
+          object-position: center;
+          width: 340px;
+          margin-top: 23px;
+          max-width: 100%;
+        }
+        
+        .spacer {
+          background-color: #24945e;
+          display: flex;
+          min-height: 33px;
+          margin-top: 23px;
+          width: 340px;
+          max-width: 100%;
+        }
+        
+        .small-icon {
+          aspect-ratio: 2.8;
+          object-fit: contain;
+          object-position: center;
+          width: 28px;
+          margin-top: 23px;
+        }
+        
+        .info-section {
+          border-radius: 0 0 0 0;
+          display: flex;
+          margin-top: 23px;
+          width: 420px;
+          /* flex-direction: column; */
+          font-family: Noto Sans KR, sans-serif;
+          text-align: center;
+          line-height: 1.4;
+        }
+        
+        .info-content {
+          border-radius: 32px 32px 0 0;
+          background-color: #fff;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          padding: 42px 15px 8px;
+        }
+        
+        .info-text-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .info-title {
+          color: #000;
+          font-size: 28px;
+          font-weight: 700;
+        }
+
+        .info-title > h2 {
+            text-align: center;
+        }
+
+        .info-description {
+          color: #727680;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          margin-top: 35px;
+        }
+        
+        .button-wrapper {
+          border-radius: 16px;
+          align-self: stretch;
+          display: flex;
+          margin-top: 35px;
+          width: 100%;
+          flex-direction: column;
+          font-size: 16px;
+          color: #fff;
+          font-weight: 500;
+          white-space: nowrap;
+        }
+        
+        .end-button {
+          border-radius: 16px;
+          background-color: #24945e;
+          padding: 16px 70px;
+          border: 2px solid #24945e;
+        }
+        
+        .home-indicator {
+          border-radius: 100px;
+          background-color: #e4e4e4;
+          align-self: center;
+          display: flex;
+          margin-top: 29px;
+          width: 134px;
+          height: 5px;
+        }
+        </style>
+            
+</head>
+<body>
+    <section class="onboarding-data-usage">
+        <div class="background">
+          <div class="content-wrapper">
+            <header class="header">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/14f30582092cb8ead8855df4e1e72f89936c0603e9dae4df40c28c3ff7eacc9d?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" class="profile-image" alt="User profile" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/46c2d3aa1dd0d3ebef9701d7caca2db656820b291f6ba453fe63a8132c83ac6d?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" class="header-icon" alt="" />
+            </header>
+            <p class="end-text">End</p>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/567e6c928c19331de750ace5fc1ab067370fa9fc606cbafd245cde35e5b3274d?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" class="main-image" alt="Data usage illustration" />
+            <div class="spacer" aria-hidden="true"></div>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2123b6c501342a0278ea30e0c615b60481c844e4cf5d5b9af0b0efb8c16b963?placeholderIfAbsent=true&apiKey=54b650ec0d994a2bb430ca7e4a034e58" class="small-icon" alt="" />
+            <div class="info-section">
+              <div class="info-content">
+                <div class="info-text-wrapper">
+                  <h2 class="info-title">기종에 따라 달라요 !</h2>
+                  <p class="info-description">
+                    Andriod: 설정 &gt; 연결 &gt; 데이터 사용 &gt; 모바일 데이터 사용량 <br />
+                    iphone: 설정 &gt; 셀룰러 &gt; 메인 &gt; 사용 내용
+                  </p>
+                  <div class="button-wrapper">
+                    <button class="end-button">End</button>
+                  </div>
+                </div>
+                <div class="home-indicator" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>
+
+
